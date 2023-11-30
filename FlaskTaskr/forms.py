@@ -15,7 +15,7 @@ class AddTaskForm(FlaskForm):
     due_date = DateField(
         'Date Due (mm/dd/yyyy)',
         validators=[DataRequired()],
-        format="%m/%d/%Y"
+        #format="%m/%d/%Y"
     )
     priority = SelectField(
         'Priority',
